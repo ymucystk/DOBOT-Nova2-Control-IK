@@ -158,7 +158,7 @@ export default function Home() {
       if(rendered){
         target_update(false)
 
-        //p51_object.quaternion.copy(get_j5_quaternion())
+        if(p51_object)p51_object.quaternion.copy(get_j5_quaternion())
     
       }
     },[wrist_rot_x,wrist_rot_y,wrist_rot_z])
